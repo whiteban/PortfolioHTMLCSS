@@ -149,12 +149,6 @@ body {
   opacity: 0.8;
   color: white;
 }
-.square {
-  width: 20px; /* Reduced square size */
-  height: 20px;
-  background-color: red;
-  margin-top: 10px; /* Space between text and square */
-}
 
 /* Learning Section */
 .learning {
@@ -164,6 +158,15 @@ body {
   align-items: center;
   text-align: center;
   padding: 50px 0;
+}
+
+.competence {
+  display: flex;
+  padding: 50px;
+  margin: 50px;
+  height: 300px;
+  width: 300px;
+  height: fit-content;
 }
 
 .test p {
@@ -186,7 +189,6 @@ body {
   letter-spacing: 2px;
   line-height: 126.7%;
   text-align: left;
-
   margin: 0px;
 }
 #Mathieu {
@@ -204,13 +206,13 @@ body {
 
 .icons {
   display: flex;
-  flex-direction: column; /* Align icons vertically */
+  flex-direction: column;
   align-items: center;
 }
 
 .icons img {
-  margin-bottom: 10px; /* Space between icons */
-  width: 40px; /* Adjust icon size */
+  margin-bottom: 10px;
+  width: 40px;
 }
 
 /* Projects Section */
