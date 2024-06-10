@@ -236,19 +236,42 @@ ul {
   padding: 50px 0;
 }
 
-/* Contact Section */
-.contact {
+.projects p {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  font-size: 34px;
+  font-family: "Poppins", SemiBold;
+  color: #ccd6f6;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
   padding: 50px 0;
 }
+.ellipse {
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-left: 300px;
+  gap: 10px;
+}
 
-.gradient {
+/* Contact Section */
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 50px 0;
+  gap: 10px;
+}
+
+.contact h2 {
+  margin-bottom: 20px;
+}
+
+.contact p {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: left;
 }
