@@ -1,8 +1,19 @@
-.App {
-  width: 50%;
-  margin: 0px auto;
+/* Global Styles */
+body {
+  background-color: #11071f;
+  color: white;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Application Container */
+.App {
+  width: 50%;
+  margin: 0 auto;
+}
+
+/* Navigation Bar */
 .nav-container {
   background-color: #1a0b2e;
   padding: 10px 0;
@@ -39,20 +50,12 @@ ul {
   text-decoration: underline;
 }
 
-body {
-  background-color: #11071f;
-  color: white;
-  font-family: "Plus Jakarta Sans", sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 /* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
   text-align: center;
-  margin: 100px 0px;
+  margin: 100px 0;
 }
 
 .hero-content {
@@ -64,6 +67,42 @@ body {
 .profile img.Me {
   width: 150px;
   height: 150px;
+}
+
+.test p {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: white;
+}
+
+#designer {
+  font-size: 17px;
+  letter-spacing: 2%;
+  line-height: auto;
+  text-align: left;
+  margin: 0;
+}
+
+#profile {
+  width: 380px;
+  font-size: 50px;
+  letter-spacing: 2px;
+  line-height: 126.7%;
+  text-align: left;
+  margin: 0;
+}
+
+#Mathieu {
+  border: 2px solid #ffffff;
+  border-radius: 100%;
+  padding: 5px;
+  color: #7127ba;
+}
+
+#Because {
+  font-size: 11px;
+  letter-spacing: 2%;
+  line-height: auto;
+  text-align: left;
 }
 
 /* Introduction Section */
@@ -78,25 +117,28 @@ body {
   font-size: 50px;
   letter-spacing: 2%;
   font-weight: normal;
-  margin: 0px;
-  vertical-align: center;
+  margin: 0;
 }
+
 .intro p img {
   width: 20px;
   height: 20px;
   vertical-align: bottom;
 }
+
 #Facebook {
   vertical-align: bottom;
   color: #1877f2;
 }
+
 .intro-description {
-  margin: 50px 0px;
+  margin: 50px 0;
 }
+
 /* Work Experience Section */
 .work-experience {
   display: flex;
-  flex-direction: column; /* Arrange vertically */
+  flex-direction: column;
   padding: 50px 0;
 }
 
@@ -118,12 +160,12 @@ body {
 }
 
 .icon {
-  margin-bottom: 10px; /* Space between logo and content */
+  margin-bottom: 10px;
 }
 
 .icon img {
-  width: 50px; /* Adjusted logo size */
-  height: auto; /* Maintain aspect ratio */
+  width: 50px;
+  height: auto;
 }
 
 .content {
@@ -131,13 +173,16 @@ body {
   flex-direction: column;
   align-items: flex-start;
 }
+
 .content h3 {
-  margin: 10px 0px;
+  margin: 10px 0;
 }
+
 .content p {
-  margin: 0px;
+  margin: 0;
   font-size: 10.5px;
 }
+
 .content button {
   margin-top: 10px; /* Space between text and button */
   padding: 10px 20px;
@@ -164,44 +209,8 @@ body {
   display: flex;
   padding: 50px;
   margin: 50px;
-  height: 300px;
-  width: 300px;
   height: fit-content;
-}
-
-.test p {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: white;
-}
-
-#designer {
-  font-size: 17px;
-  letter-spacing: 2%;
-  line-height: auto;
-  text-align: left;
-
-  margin: 0px;
-}
-
-#profile {
-  width: 380px;
-  font-size: 50px;
-  letter-spacing: 2px;
-  line-height: 126.7%;
-  text-align: left;
-  margin: 0px;
-}
-#Mathieu {
-  border: 2px solid #ffffff;
-  border-radius: 100%;
-  padding: 5px;
-  color: #7127ba;
-}
-#Because {
-  font-size: 11px;
-  letter-spacing: 2%;
-  line-height: auto;
-  text-align: left;
+  width: 300px;
 }
 
 .icons {
@@ -217,10 +226,13 @@ body {
 
 /* Projects Section */
 .projects {
+  font-size: 16px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  color: #9857d3;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-align: start;
   padding: 50px 0;
 }
 
@@ -231,4 +243,12 @@ body {
   align-items: center;
   text-align: center;
   padding: 50px 0;
+}
+
+.gradient {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
