@@ -40,6 +40,8 @@ body {
 .logo {
   width: 50px;
   height: auto;
+  position: relative;
+  left: 350px;
 }
 
 .nav-container {
@@ -53,6 +55,8 @@ ul {
   gap: 50px;
   margin: 0;
   padding: 0;
+  position: relative;
+  left: 750px;
 }
 
 .menu-item {
