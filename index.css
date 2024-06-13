@@ -1,43 +1,58 @@
-/* Global Styles */
+/* reset css https://www.alsacreations.com/astuce/lire/36-la-technique-du-reset-css.html */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   background-color: #11071f;
   color: white;
   font-family: "Plus Jakarta Sans", sans-serif;
-  margin: 0;
-  padding: 0;
+  overflow-x: hidden;
 }
 
 /* Application Container */
 .App {
-  width: 50%;
-  margin: 0 auto;
-}
-
-/* Navigation Bar */
-.nav-container {
-  background-color: #1a0b2e;
-  padding: 10px 0;
-}
-
-.nav {
-  font-size: 20px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1200px;
+  max-width: 1500px;
+  width: 100%;
   margin: 0 auto;
   padding: 0 20px;
 }
 
+.header,
+.nav-container {
+  background-color: #1a0b2e;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.nav {
+  font-size: 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1a0b2e;
+  padding: 10px 20px;
+}
+
 .logo {
   width: 50px;
-  height: auto;
+}
+
+.nav-container {
+  height: 113px;
+  display: flex;
+  align-items: center;
+  max-width: 1000px;
+  justify-content: space-between;
 }
 
 ul {
   display: flex;
   list-style: none;
-  gap: 100px;
+  gap: 150px;
 }
 
 .menu-item {
@@ -50,45 +65,59 @@ ul {
   text-decoration: underline;
 }
 
+.layout {
+  max-width: 1000px;
+  margin: auto;
+  padding: 50px 30px;
+}
+
 /* Hero Section */
 .hero-section {
   display: flex;
   align-items: center;
-  text-align: center;
-  margin: 100px 0;
+  justify-content: flex-start;
+  gap: 40px;
+  padding-top: 200px;
 }
 
 .hero-content {
   display: flex;
-  position: relative;
-  justify-content: left;
+  flex-direction: column;
+  max-width: 400px;
+}
+
+.hero-content span {
+  display: block;
+  font-size: 11px;
+}
+
+.hero-content h1 {
+  font-size: 51px;
+  line-height: 105%;
+}
+
+.hero-content h1 .job {
+  text-decoration: underline;
+  font-size: 17px;
+}
+
+.hero-content h1 em {
+  color: #7127ba;
+}
+
+.hero-content h1 .subline {
+  font-size: 11px;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 .profile img.Me {
   width: 150px;
   height: 150px;
-}
-
-.test p {
-  font-family: "Plus Jakarta Sans", sans-serif;
-  color: white;
-}
-
-#designer {
-  font-size: 17px;
-  letter-spacing: 2%;
-  line-height: auto;
-  text-align: left;
-  margin: 0;
-}
-
-#profile {
-  width: 380px;
-  font-size: 50px;
-  letter-spacing: 2px;
-  line-height: 126.7%;
-  text-align: left;
-  margin: 0;
 }
 
 #Mathieu {
@@ -98,69 +127,64 @@ ul {
   color: #7127ba;
 }
 
-#Because {
-  font-size: 11px;
-  letter-spacing: 2%;
-  line-height: auto;
-  text-align: left;
-}
-
 /* Introduction Section */
 .intro {
   display: flex;
-  margin-top: 1rem;
-  font-family: "Plus Jakarta Sans", sans-serif;
   flex-direction: column;
+  font-size: 22px;
+}
+
+.intro p:last-child {
+  margin-top: 70px;
 }
 
 .intro h2 {
   font-size: 50px;
-  letter-spacing: 2%;
-  font-weight: normal;
-  margin: 0;
-}
 
-.intro p img {
-  width: 20px;
-  height: 20px;
-  vertical-align: bottom;
+  .intro p img {
+    width: 20px;
+    height: 20px;
+  }
 }
-
 #Facebook {
   vertical-align: bottom;
   color: #1877f2;
-}
-
-.intro-description {
-  margin: 50px 0;
 }
 
 /* Work Experience Section */
 .work-experience {
   display: flex;
   flex-direction: column;
-  padding: 50px 0;
+  align-items: center;
+  padding: 50px 20px;
 }
 
 .container {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
-  box-sizing: border-box;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 1200px) {
+  .nav-container {
+    flex-direction: column;
+  }
 }
 
 .card {
   display: flex;
+  flex-direction: column;
   align-items: center;
   border-radius: 10px;
   padding: 20px;
   background-image: linear-gradient(135deg, #1a0938 10%, #1a0b2e 100%);
-  gap: 30px;
-}
-
-.icon {
-  margin-bottom: 10px;
+  gap: 20px;
 }
 
 .icon img {
@@ -171,7 +195,7 @@ ul {
 .content {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .content h3 {
@@ -184,7 +208,7 @@ ul {
 }
 
 .content button {
-  margin-top: 10px; /* Space between text and button */
+  margin-top: 10px;
   padding: 10px 20px;
   border: 2px solid #693b93;
   background-color: #2c1250;
@@ -201,57 +225,32 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 50px 0;
+  padding: 50px 20px;
 }
 
 .competence {
   display: flex;
-  padding: 50px;
-  margin: 50px;
-  height: fit-content;
-  width: 300px;
-}
-
-.icons {
-  display: flex;
   flex-direction: column;
   align-items: center;
-}
-
-.icons img {
-  margin-bottom: 10px;
-  width: 40px;
+  padding: 50px;
+  margin: 50px;
+  width: 100%;
 }
 
 /* Projects Section */
-.projects {
-  font-size: 16px;
+#special {
+  font-size: 18px;
   font-family: "Plus Jakarta Sans", sans-serif;
   color: #9857d3;
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: start;
-  padding: 50px 0;
+  margin: 0 20px;
 }
 
-.projects p {
-  display: flex;
-  font-size: 34px;
+.projects h2 {
+  font-size: 2rem;
   font-family: "Poppins", SemiBold;
   color: #ccd6f6;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: start;
-  padding: 50px 0;
-}
-.ellipse {
-  display: flex;
-  align-items: center;
-  flex-direction: row-reverse;
-  margin-left: 300px;
-  gap: 10px;
+  padding: 10px 0;
+  margin-top: 0;
 }
 
 /* Contact Section */
@@ -260,18 +259,211 @@ ul {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  padding: 50px 0;
+  padding: 50px 20px;
   gap: 10px;
 }
 
 .contact h2 {
   margin-bottom: 20px;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 .contact p {
+  margin-top: 20px;
+  padding: 0;
+}
+
+/* Ellipse Containers */
+.ellipse-container,
+.ellipse-container1,
+.ellipse-container2 {
   display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  text-align: left;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 400px;
+}
+
+/* Media Queries pour les ajustements */
+@media (max-width: 768px) {
+  .nav,
+  .hero-section,
+  .intro,
+  .work-experience,
+  .competence,
+  .projects,
+  .contact {
+    padding: 10px;
+    margin: 0;
+  }
+
+  .hero-section {
+    margin: 50px 10px;
+  }
+
+  ul {
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  .logo,
+  .menu-item {
+    left: auto;
+  }
+}
+
+.rectangle {
+  width: 100%;
+  position: relative;
+  z-index: -1;
+}
+
+.projects {
+  width: 40%;
+  margin-left: 10px;
+  padding: 10px;
+}
+.Contenu .Maskgroup-image {
+  width: 100px;
+  height: auto;
+  display: block;
+  margin: 10px 0;
+}
+
+h2 {
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.containers {
+  width: 100%;
+  padding: 10px;
+  background: rgba(58, 40, 75, 0.5);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
+}
+
+.poppins-thin {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.poppins-extralight {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.poppins-light {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.poppins-regular {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.poppins-semibold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+.poppins-bold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.poppins-extrabold {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.poppins-thin-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.poppins-extralight-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  font-style: italic;
+}
+
+.poppins-light-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.poppins-regular-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.poppins-medium-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.poppins-semibold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.poppins-bold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.poppins-extrabold-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  font-style: italic;
+}
+
+.poppins-black-italic {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+.preahvihear-regular {
+  font-family: "Preahvihear", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.plus-jakarta-sans {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
 }
