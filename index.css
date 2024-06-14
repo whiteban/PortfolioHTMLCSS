@@ -217,8 +217,9 @@ ul {
 .content h3 {
   margin: 10px 0;
 }
-
-.content p {
+qqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqazzzzzzzzzzzzzzzzzzzzzzsqasq
+  .content
+  p {
   margin: 0;
   font-size: 10.5px;
 }
@@ -248,16 +249,25 @@ ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 50px;
-  margin: 50px;
   width: 100%;
+  padding: 50px 20px;
+  box-sizing: border-box;
+  margin: auto;
+  max-width: 1000px;
 }
 
 /* Projects Section */
 #special {
   font-size: 18px;
-  font-family: "Plus Jakarta Sans", sans-serif;
+  font-family: "Poppins", SemiBold;
   color: #9857d3;
+  margin: 0 20px;
+}
+
+#exemple {
+  font-size: 34px;
+  font-family: "Poppins", SemiBold;
+  color: #ccd6f6;
   margin: 0 20px;
 }
 
@@ -362,6 +372,14 @@ h2 {
   align-self: start;
 }
 .containers {
+  display: flex;
+  align-items: self-end;
+  justify-content: center;
+  width: 100%;
+  padding: 10px;
+}
+
+.detail {
   width: 100%;
   padding: 10px;
   background: rgba(58, 40, 75, 0.5);
