@@ -5,176 +5,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Preahvihear&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <div class="nav">
-      <header>
-        <nav class="nav-container">
-            <img src="assets/Mlogo.svg" alt="Logo M" class="logo" />
-            <ul>
-              <li><a class="menu-item" href="#home">Accueil</a></li>
-              <li><a class="menu-item" href="#about">À propos</a></li>
-              <li><a class="menu-item" href="#lab">Laboratoire</a></li>
-            </ul>
-          </div>
-        </nav>
-      </header>
-<div class="App">
-      <section id="hero" class="hero-section">
-        <div class="hero-content">
-          <img src="assets/me.png" alt="Moi" class="Me" />
-          <div class="test">
-            <p id="designer">A designer who</p>
-            <p id="profile">
-              Judges a book by its <span id="Mathieu">cover</span>...
-            </p>
-            <p id="Because">
-              Because if the cover does not impress you what else can?
-            </p>
-          </div>
+    <header class="nav plus-jakarta-sans">
+      <nav class="nav-container">
+        <img src="assets/Mlogo.svg" alt="Logo M" class="logo" />
+        <ul>
+          <li><a class="menu-item" href="#home">Accueil</a></li>
+          <li><a class="menu-item" href="#about">À propos</a></li>
+          <li><a class="menu-item" href="#lab">Laboratoire</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="hero" class="hero-section layout">
+      <img src="assets/me.png" alt="Moi" class="Me" />
+      <div class="hero-content">
+        <h1 class="preahvihear-regular">
+          <span class="job">A Designer who</span>
+
+          Judges a book by its <em>cover</em>...
+
+          <span id="subline">
+            Because if the cover does not impress you what else can?
+          </span>
+        </h1>
+      </div>
+    </section>
+
+    <!-- Contenu principal -->
+    <main>
+      <!-- Introduction -->
+      <section class="intro preahvihear-regular layout">
+        <h2>I'm a Software Engineer.|</h2>
+        <p>
+          Currently, I'm a Software Engineer at
+          <img src="assets/image 8.png" alt="Facebook logo" />
+          <span id="Facebook"> Facebook</span>,
+        </p>
+        <p class="intro-description">
+          A self-taught UI/UX designer, functioning in the industry for 3+ years
+          now. I make meaningful and delightful digital products that create an
+          equilibrium between user needs and business goals.
+        </p>
+      </section>
+
+      <section class="work-experience">
+        <h2 class="preahvihear-regular">Work Experience</h2>
+        <div class="container">
+          <article class="card">
+              <img src="assets/etoile.png" alt="Logo Abecedaire" />
+            </div>
+            <div class="content poppins-medium">
+              <h3 class="poppins-semibold">CIB on the Mobile</h3>
+              <p>
+                Take your client onboard seamlessly by our amazing tool of
+                digital onboard process.
+              </p>
+              <button>learn more</button>
+            </div>
+          </article>
+
+          <article class="card">
+              <img src="assets/ampoule.png" alt="Logo Abecedaire" />
+            </div>
+            <div class="content poppins-medium">
+              <h3 class="poppins-semibold">CIB on the Mobile</h3>
+              <p>
+                Take your client onboard seamlessly by our amazing tool of
+                digital onboard process.
+              </p>
+              <button>learn more</button>
+            </div>
+          </article>
+
+          <article class="card">
+              <img src="assets/tasse.png" alt="Logo Abecedaire" />
+            </div>
+            <div class="content poppins-medium">
+              <h3 class="poppins-semibold">CIB on the Mobile</h3>
+              <p>
+                Take your client onboard seamlessly by our amazing tool of
+                digital onboard process.
+              </p>
+              <button>learn more</button>
+            </div>
+          </article>
+
+          <article class="card">
+              <img src="assets/epingle.png" alt="Logo Abecedaire" />
+            </div>
+            <div class="content poppins-medium">
+              <h3 class="poppins-semibold">CIB on the Mobile</h3>
+              <p>
+                Take your client onboard seamlessly by our amazing tool of
+                digital onboard process.
+              </p>
+              <button>learn more</button>
+            </div>
+          </article>
         </div>
       </section>
 
-      <!-- Contenu principal -->
-      <main>
-        <!-- Introduction -->
-        <section class="intro">
-          <h2>I'm a Software Engineer.|</h2>
+      <!-- Compétences -->
+      <section class="competence">
+        <img src="assets/Skills.png" alt="Compétences" />
+      </section>
+
+      <section class="projects">
+        <h2 id="special">
+          Featured Project
+          <strong><br />Example Project</strong>
+        </h2>
+
+        <!-- Container for the Card image -->
+        <div class="containers">
           <p>
-            Currently, I'm a Software Engineer at
-            <img src="assets/image 8.png" alt="Facebook logo" />
-            <span id="Facebook"> Facebook</span>,
+            Web app for visualizing personalized Spotify data. View your top
+            artists, top tracks, recently played tracks, and detailed audio
+            information about each track. Create and save new playlists of
+            recommended tracks based on your existing playlists and more.
           </p>
-          <p class="intro-description">
-            A self-taught UI/UX designer, functioning in the industry for 3+
-            years now. I make meaningful and delightful digital products that
-            create an equilibrium between user needs and business goals.
-          </p>
-        </section>
+        </div>
+      </section>
+    </main>
 
-        <!-- Expérience professionnelle -->
-        <section class="work-experience">
-          <h2>Expérience Professionnelle</h2>
-          <div class="container">
-            <!-- Carte d'expérience professionnelle -->
-
-            <article class="card">
-              <div class="icon">
-                <img src="assets/LOGO_ABECEDAIRE.png" alt="Logo Abecedaire" />
-              </div>
-              <div class="content">
-                <h3>CIB on the Mobile</h3>
-                <p>
-                  Take your client onboard seamlessly by our amazing tool of
-                  digital onboard process.
-                </p>
-                <button>learn more</button>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="icon">
-                <img src="assets/LOGO_ABECEDAIRE.png" alt="Logo Abecedaire" />
-              </div>
-              <div class="content">
-                <h3>CIB on the Mobile</h3>
-                <p>
-                  Take your client onboard seamlessly by our amazing tool of
-                  digital onboard process.
-                </p>
-                <button>learn more</button>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="icon">
-                <img src="assets/LOGO_ABECEDAIRE.png" alt="Logo Abecedaire" />
-              </div>
-              <div class="content">
-                <h3>CIB on the Mobile</h3>
-                <p>
-                  Take your client onboard seamlessly by our amazing tool of
-                  digital onboard process.
-                </p>
-                <button>learn more</button>
-              </div>
-            </article>
-
-            <article class="card">
-              <div class="icon">
-                <img src="assets/LOGO_ABECEDAIRE.png" alt="Logo Abecedaire" />
-              
-              </div>
-              <div class="content">
-                <h3>CIB on the Mobile</h3>
-                <p>
-                  Take your client onboard seamlessly by our amazing tool of
-                  digital onboard process.
-                </p>
-                <button>learn more</button>
-              </div>
-            </article>
-          </div>
-        </section>
-
-        <!-- Compétences -->
-        <section class="competence">
-          <img src="assets/Skills.png" alt="Compétences" />
-        </section>
-        
-        
-        <section class="projects">
-          <h2><span id="special"> Featured Project</span><strong><br>Example Project</strong></h2>
-          
-          <!-- Container for the Card image -->
-          <div class="containers">
-            <p>Web app for visualizing personalized Spotify data. View your top artists, top tracks, recently played tracks,
-               and detailed audio information about each track. Create and save new playlists of recommended tracks based on your existing playlists and more.</p>
-          </div>
-          <div class="ellipse-container">
-            <img src="assets/Gradient.png" alt="Gradient" class="ellipse" />
-          </div>
-          
-          <div class="ellipse-container1">
-            <img src="assets/Gradient.png" alt="Gradient1" class="ellipse1" />
-          </div>
-          
-          <div class="ellipse-container2">
-            <img src="assets/Gradient1.png" alt="Gradient2" class="ellipse2" />
-          </div>
-        
-          <div class="Contenu">
-            <img src="assets/Maskgroup.png" alt="Maskgroup" class="Maskgroup-image" />
-          </div>
-        </section>
-      </main>
-
-   
-      <footer>
-        <section class="contact">
-          <h2>Contact</h2>
-          <p>
-            I'm currently looking to join a cross-functional team that value
-            improving people's lives through accessible design. or have a
-            project in mind? Let's connect. <br><br><br>ibrhaimmemon930@gmail.com</br></br></br>
-          </p>
-        </section>
-        <section class="text-gray-600 body-font relative">
-          <div class="absolute inset-0 bg-gray-300">
-            <iframe
-              width="100%"
-              height="100%"
-              frameborder="0"
-              marginheight="0"
-              marginwidth="0"
-              title="Map"
-              scrolling="yes"
-              src="https://maps.google.com/maps?width=100%&amp;height=600&amp;hl=en&amp;q=Rouen&amp;ie=UTF8&amp;t=&amp;z=14&amp;iwloc=B&amp;output=embed"
-              aria-label="Google Map of Rouen"
-            ></iframe>
-          </div>
-        </section>
-      </footer>
-    </div>
+    <footer class="contact">
+      <h2 id="contact-title">Contact</h2>
+      <p>
+        I'm currently looking to join a cross-functional team that value
+        improving people's lives through accessible design. or have a project in
+        mind? Let's connect. ibrhaimmemon930@gmail.com
+      </p>
+    </footer>
   </body>
 </html>
