@@ -41,6 +41,68 @@ body {
   width: 50px;
 }
 
+/* Style de base pour le menu burger */
+#link {
+  display: none; /* Caché par défaut pour les grands écrans */
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+#burger {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  display: block;
+  margin: 5px 0;
+}
+
+/* Styles pour le menu de navigation */
+.list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.menu-item {
+  display: block;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+}
+
+.menu-item:hover {
+  background-color: #ddd;
+}
+
+@media screen and (max-width: 900px) {
+  #link {
+    display: block;
+  }
+
+  .list {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 2p;
+  }
+
+  .list.active {
+    display: flex;
+  }
+
+  .menu-item {
+    padding: 10px 20px;
+  }
+}
+
 .nav-container {
   height: 113px;
   display: flex;
@@ -191,37 +253,6 @@ ul {
     flex-direction: column;
   }
 }
-/* on peut garder cette position pour le responsive .card {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  border-radius: 10px;
-  padding: 20px;
-  background-image: linear-gradient(135deg, #1a0938 10%, #1a0b2e 100%);
-  gap: 20px;
-}
-  .work-experience .card .content {
-  display: flex;
-  flex-direction: column;
-}
-
-.work-experience .container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 20px;
-  margin-top: 20px;
-}
-
-.work-experience .card {
-  border-radius: 10px;
-  padding: 20px;
-  color: #fff;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-*/
 .card {
   display: flex;
   flex-direction: column;
@@ -247,7 +278,7 @@ ul {
 .content h3 {
   margin: 10px 0;
   text-align: left;
-  justify-content: flex-start;
+  margin-right: auto;
 }
 .content p {
   margin: 0;
@@ -331,7 +362,7 @@ ul {
   color: #ccd6f6;
   padding: 10px 0;
   margin-top: 0;
-  position: absolute;
+  padding: 10px 0;
 }
 
 .contact h2 {
@@ -346,6 +377,7 @@ ul {
   text-align: left;
   box-sizing: border-box;
   margin: 0 20px;
+  margin-right: 1080px;
 }
 
 .contact p {
@@ -424,8 +456,8 @@ h2 {
 
 .detail {
   width: 100%;
-  padding: 10px;
-  background: #3a284b 50%;
+  padding: 30px;
+  background: rgba(58, 40, 75, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
@@ -436,16 +468,24 @@ h2 {
 }
 .detail2 {
   width: 100%;
-  padding: 10px;
-  background: #3a284b 50%;
+  padding: 30px;
+  background: rgba(58, 40, 75, 0.5);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
-
   position: relative;
   z-index: 1;
+  right: 100px;
 }
+
+#valeur {
+  font-family: "Preahvihear", SemiBold;
+  font-size: 1.2rem;
+  margin: 0;
+  color: #a362ff;
+}
+
 .work-experience .card .content {
   display: flex;
   flex-direction: column;
