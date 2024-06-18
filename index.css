@@ -78,31 +78,6 @@ body {
   background-color: #ddd;
 }
 
-@media screen and (max-width: 900px) {
-  #link {
-    display: block;
-  }
-
-  .list {
-    display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 50px;
-    right: 15px;
-    background-color: #fff;
-    border: 1px solid #ddd;
-    box-shadow: 0 2p;
-  }
-
-  .list.active {
-    display: flex;
-  }
-
-  .menu-item {
-    padding: 10px 20px;
-  }
-}
-
 .nav-container {
   height: 113px;
   display: flex;
@@ -242,17 +217,6 @@ ul {
   gap: 20px;
 }
 
-@media (min-width: 768px) {
-  .container {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 1200px) {
-  .nav-container {
-    flex-direction: column;
-  }
-}
 .card {
   display: flex;
   flex-direction: column;
@@ -297,38 +261,248 @@ ul {
   color: white;
 }
 
-@media (max-width: 900px) {
-  .work-experience {
+@media (max-width: 1400px) {
+  .projects:nth-child(2) {
+    flex-direction: column-reverse;
+  }
+  .projects:nth-child(1) {
     flex-direction: column;
+  }
+  .projects {
+    gap: 20px;
+  }
+  .project-item {
+    flex-direction: column;
+  }
+  .project-item:nth-child(2) {
+    flex-direction: column-reverse; /* Image en premier, puis texte */
+  }
+  .intro h2 {
+    font-size: 34px;
+  }
+
+  .detail {
+    max-width: 100%;
+    right: 150px;
+  }
+  .detail2 {
+    max-width: 100%;
+    right: 100px;
+  }
+  .detail p,
+  .detail2 p {
+    position: relative;
+    text-align: center;
+  }
+  body .work-experience .container {
+    grid-template-columns: 1fr;
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     align-items: center;
   }
+
+  .contact {
+    max-width: 100%;
+    right: 90px;
+    position: relative;
+  }
+
+  .contact-title {
+    max-width: 100%;
+    right: 40px;
+    position: relative;
+  }
 }
-/* Learning Section */
+.logo,
+.menu-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#link {
+  display: block;
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 50px;
+  right: 15px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu.active {
+  display: flex;
+}
+
+.menu-item {
+  padding: 10px 20px;
+}
+
+/* Styles par défaut */
+header.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #1a0b2e;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 100px;
+}
+
+.nav-menu {
+  display: flex;
+  gap: 20px;
+}
+
+.menu-item {
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+#link {
+  display: none;
+}
+
+.menu-icon-line {
+  display: none;
+}
+
+@media (max-width: 1400px) {
+  body .work-experience .container {
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  #example {
+    font-size: 24px;
+  }
+  #valeur {
+    font-size: 31px;
+  }
+  .projects {
+    grid-auto-flow: row;
+    width: 100%;
+  }
+
+  .hero-section {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .project-item {
+    width: 100%;
+  }
+
+  .image-container img {
+    display: block;
+    width: 100%;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+  }
+
+  /* Centrer le logo et les éléments du menu */
+  .logo,
+  .menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #1a0b2e;
+    padding: 20px;
+  }
+
+  /* Afficher l'icône du menu burger */
+  #link {
+    display: block;
+    cursor: pointer;
+    margin-left: auto; /* Pousse l'icône burger à droite */
+  }
+
+  .menu-icon-line {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: rgb(255, 255, 255);
+    margin: 5px 0;
+    position: relative;
+    top: 29px;
+  }
+}
+
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  z-index: 10;
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.nav-menu.active {
+  display: flex;
+}
+
+.menu-item {
+  padding: 10px 20px;
+}
+.detail2 {
+  max-width: 100%;
+}
+
 .learning {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 50px 20px;
+  font-size: 24px;
 }
-/* competence a finir */
+
 .competence {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
-  width: 100%;
   padding: 50px 20px;
   box-sizing: border-box;
-  margin: auto;
-  max-width: 1000px;
+  margin: 0;
 }
-
 /* Projects Section */
 #special {
   font-size: 18px;
   font-family: "Poppins", SemiBold;
   color: #9857d3;
   margin: 0 20px;
+  padding: 10px 0;
 }
 
 #example {
@@ -377,40 +551,11 @@ ul {
   text-align: left;
   box-sizing: border-box;
   margin: 0 20px;
-  margin-right: 1080px;
 }
 
 .contact p {
   margin-top: 20px;
   padding: 0;
-}
-
-@media (max-width: 768px) {
-  .nav,
-  .hero-section,
-  .intro,
-  .work-experience,
-  .competence,
-  .projects,
-  .contact {
-    padding: 10px;
-    margin: 0;
-  }
-
-  .hero-section {
-    margin: 50px 10px;
-  }
-
-  ul {
-    flex-direction: column;
-    gap: 10px;
-    align-items: center;
-  }
-
-  .logo,
-  .menu-item {
-    left: auto;
-  }
 }
 
 .rectangle {
@@ -420,20 +565,17 @@ ul {
 }
 
 .projects {
-  width: 40%;
-  margin-left: 10px;
+  width: 100%;
   padding: 10px;
 }
 .Contenu .Maskgroup-image {
   width: 100px;
   height: auto;
   display: block;
-  margin: 10px 0;
 }
 
 h2 {
   font-size: 1.2rem;
-  margin: 0;
 }
 .work-experience .card .content button {
   color: #fff;
@@ -474,16 +616,20 @@ h2 {
   -webkit-backdrop-filter: blur(10px);
   border-radius: 20px;
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.17);
-  position: relative;
   z-index: 1;
   right: 100px;
 }
 
+.competence p {
+  font-size: 31pix;
+  color: #fff;
+  margin: auto;
+}
 #valeur {
   font-family: "Preahvihear", SemiBold;
   font-size: 1.2rem;
-  margin: 0;
   color: #a362ff;
+  max-width: 100px;
 }
 
 .work-experience .card .content {
@@ -630,6 +776,7 @@ h2 {
   font-family: "Preahvihear", sans-serif;
   font-weight: 400;
   font-style: normal;
+  font-size: 16px;
 }
 
 .plus-jakarta-sans {
@@ -643,7 +790,7 @@ h2 {
   flex-direction: column;
   gap: 50px;
   max-width: 1400px;
-  width: 1400px;
+  /* width: 1400px; */
 }
 
 .project-item {
@@ -663,5 +810,7 @@ h2 {
 
 .image-container img {
   display: block;
-  width: 100%;
+  width: 80%;
+  position: relative;
+  left: 50px;
 }
