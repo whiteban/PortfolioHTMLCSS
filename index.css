@@ -79,7 +79,7 @@ body {
 }
 
 .nav-container {
-  height: 113px;
+  height: 80px;
   display: flex;
   align-items: center;
   max-width: 1000px;
@@ -114,7 +114,6 @@ ul {
   align-items: center;
   justify-content: flex-start;
   gap: 40px;
-  padding-top: 200px;
 }
 
 .hero-content {
@@ -307,14 +306,12 @@ ul {
 
   .contact {
     max-width: 100%;
-    right: 90px;
-    position: relative;
+    text-align: justify;
   }
 
   .contact-title {
     max-width: 100%;
-    right: 40px;
-    position: relative;
+    font-size: 25px;
   }
 }
 .logo,
@@ -468,6 +465,7 @@ header.nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  height: 80px;
 }
 .nav-menu.active {
   display: flex;
@@ -524,10 +522,8 @@ header.nav {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding: 50px 20px;
   gap: 10px;
-  margin: 0 100px;
 }
 .contact-title {
   display: block;
@@ -800,7 +796,6 @@ h2 {
 
 .text-container {
   flex: 1;
-  padding: 20px;
 }
 
 .image-container {
@@ -810,7 +805,4 @@ h2 {
 
 .image-container img {
   display: block;
-  width: 80%;
-  position: relative;
-  left: 50px;
 }
